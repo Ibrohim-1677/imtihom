@@ -391,7 +391,7 @@ body {
 }
 
 .container {
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -422,6 +422,14 @@ body {
           align-items: center;
   list-style: none;
   color: #fff;
+}
+
+.header__hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
 }
 
 .header__item {
@@ -474,17 +482,23 @@ body {
   opacity: 1;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425) {
-  .header__list {
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+  .header__flex {
     display: none;
   }
-  .header__language {
-    display: none;
+  .header__hamburger {
+    display: block;
   }
 }
 
 .main {
-  margin-bottom: 207px;
+  margin-bottom: 177px;
 }
 
 .main__flez {
@@ -531,7 +545,7 @@ body {
   top: -220px;
   right: 0px;
   width: 5px;
-  height: 913px;
+  height: 945px;
 }
 
 .form__lebl {
@@ -669,5 +683,74 @@ body {
   line-height: 26px;
   color: #FFFFFF;
   opacity: 0.6;
+}
+
+.form__button {
+  background-color: #0040DD;
+  border: 1px solid #0040DD;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.form__budiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+  .form::before {
+    display: none;
+  }
+  .form::after {
+    display: none;
+  }
+  .form__div {
+    display: block;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .main__flez {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .form__select {
+    width: 100%;
+  }
+  .main__min {
+    width: 340px;
+    margin-left: 0;
+  }
+  .main__list::before {
+    content: "";
+    width: 125px;
+    height: 100%;
+    right: calc(50% - 50px);
+  }
+  .form__aria {
+    display: none;
+  }
+  .form__num {
+    width: 100%;
+  }
+  .form__select--5 {
+    width: 100%;
+  }
+  .form__button {
+    width: 100%;
+  }
+  for
+.button__img {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

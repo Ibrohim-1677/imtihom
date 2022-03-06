@@ -1,5 +1,5 @@
 .main{
-    margin-bottom: 207px;
+    margin-bottom: 177px;
 }
 .main__flez{
     display: flex;
@@ -36,7 +36,7 @@
         top: -220px;
         right:0px;
         width: 5px;
-        height:  913px;}
+        height:  945px;}
 }
 
 .form__lebl{
@@ -141,4 +141,74 @@
     line-height: 26px;
     color: #FFFFFF;
     opacity: 0.6;
+}
+.form__button{
+    background-color: #0040DD;
+    border: 1px solid #0040DD;
+    color: #fff;
+    padding:10px 15px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.form__budiv{
+    display: flex;
+}
+@media only screen and (max-width:425px){
+    .form{
+        &::before{
+        display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .form__div{
+        display: block;
+    }
+    .form__input{
+        width: 100%;
+
+    }
+    .main__flez {
+        flex-direction: column-reverse;
+    }
+    .form__select{
+        width: 100%;
+
+    }
+    .main__min{
+        width: 340px;
+        margin-left: 0;
+    }
+
+    .main__list{
+        &::before{
+            content: "";
+            width: 125px;
+            height: 100%;
+    right:0;
+
+        }
+    }
+    .form__aria{
+    display: none;  
+
+    }
+    .form__num{width: 100%;
+
+    }
+    .form__select--5{
+        width: 100%;
+    }
+    .form__button{
+        width: 100%;
+        
+    }
+    for
+    .button__img{
+        justify-content: space-around;
+    }
+    .container{
+        padding: 10px;
+    }
 }
